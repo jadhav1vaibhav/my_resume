@@ -87,9 +87,395 @@ body{
 
 }
 #my-intro{
-    margin: 10px 180px 0px 180px;
+    /* margin: 10px 180px 0px 180px; */
     text-align:justify;
+    overflow-wrap: break-word;
+    /* if content is overflowing it will break the world  */
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
 }
 /* #name-social-container{
     padding-top: 100px;
 } */
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* height: 75vh; */
+    align-items: center;
+}
+section:nth-child(2n){
+    /* background-color:wheat; */
+    background-color: #9e9b9b29;
+}
+section:nth-child(2n + 1){
+    background-color: white;
+
+}
+
+.skill-bars{
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+
+}
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    /* margin: 10px auto; */
+    font-weight: 400;
+
+}
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+progress{
+    height: 35px;
+    margin: 10px;
+}
+.skill-progress{
+    /* border: 2px solid grey; */
+    /* width: 120px; */
+    /* width: 11rem;
+    height: 2.2rem;
+    border-radius: 0.8rem;
+    background-color: lightgrey;
+    margin: 15px;
+     */
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+}
+.skill-progress > div {
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+    
+}
+ .skill-name{
+    padding: 10px 0px 5px 10px;
+} 
+/* .skill-indicator{
+    width: 7rem;
+    height: 1.4rem;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0.8rem;
+} */
+.mb75px{
+    margin-bottom: 75px;
+}
+/* skills id's  */
+
+
+.timeline{
+    position: relative;
+    width: 75%;
+    /* border: 2px solid black; */
+}
+.timeline-box{
+    padding: 5px;
+    position: relative;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    /* border: 2px solid black; */
+    margin: 5px;
+    text-align: right;
+}
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+.timeline-box::after{
+    content: '';
+    position: absolute;
+    top: 25%;
+    background-color: grey;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    /* right: -12%; */
+    z-index: 1;
+
+}
+.timeline-box:nth-child(2n+1)::after {
+    right: -10%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -9%;
+}
+.timeline-container {
+    padding: 8px;
+}
+.organization-logo{
+    width: 70px;
+    margin-left: 10px;
+    position: absolute;
+    overflow:hidden;
+}
+.organization-logo>img{
+    width: 100%;
+}
+
+.timeline-divider{
+    position: absolute;
+    width: 0;
+    border: 1px dashed #0096fa6b;
+    top: 10%;
+    left: 50%;
+    height: 66%;
+    color: #433E3F;
+
+}
+.timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+
+.timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+    font-size: 30px;
+}
+
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+    margin: 2px;
+}
+
+.experience-description{
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#contact{
+    /* background: linear-gradient(50deg,#2A549F,#403066); */
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+}
+.contact-container{
+display: inline-block;
+margin-top: -70px;
+}
+.contact-input{
+    border: none;
+    background: transparent;
+    border-bottom: 3px solid white;
+    width: 450px;
+    color: white;
+    
+}
+.contact-form{
+    display: inline-block;
+    align-content:center;
+    justify-content: center;
+    margin: 50px;
+    
+}
+.contact-details{
+    display: inline-block;
+    color: white;
+    margin: 50px;
+}
+.contact-details ul{
+    list-style: none;
+    padding-left: 0;
+    line-height: 30px;
+}
+.contact-details i{
+    margin: 10px;
+}
+.contact-form button{
+    align-items: center;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    padding: 15px;
+    font-weight: 800;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+    .portfolio-container {
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 50px;
+        margin-bottom: 20px;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    
+    .project {
+        max-width: 300px;
+        overflow: hidden;
+        margin: 30px;
+        margin-left: 70px;
+        margin-right: 70px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+
+    }
+    
+    .project a {
+        width: 100%;
+        height: 100%;
+    }
+    .project-details{
+        transition: all 0.5s ease-in-out;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        color: transparent;
+        text-align: center;
+        padding: 10px;
+    }
+
+.project:hover{
+    box-shadow: 0 0 20px #74ADC8;
+    
+}
+
+.project:hover .project-details {
+    background-color: #80808078;
+    color: white;
+}
+
+/* .project>img{
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+} */
+/* Common Margin Classes */
+
+.m0 {
+    margin: 0;
+}
+
+.mb75px {
+    margin-bottom: 75px;
+}
+
+.mb50px {
+    margin-bottom: 50px;
+}
+
+
+
+/*common color classes */
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+
+}
+
+
+
+/* setting background-color */
+
+.m-blue {
+    color: #2857a4;
+}
+
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-teal {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+
+
+/*Percentage Classes */
+
+.eighty-five-percent {
+    height: inherit;
+    width: 85%;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.fifty-percent {
+    height: inherit;
+    width: 50%;
+}
+.sixty-five-percent{
+    height: inherit;
+    width: 65%;
+}
+.sixty-percent{
+    height: inherit;
+    width: 60%;
+}
+.seventy-percent{
+    height: inherit;
+    width: 60%;
+}
